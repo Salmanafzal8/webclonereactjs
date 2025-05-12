@@ -1,0 +1,23 @@
+.btn button{    
+    border-radius: 30px;
+    padding: 5px 30px;
+    border:  #2CB8DF solid;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: aliceblue;
+    font-size: small;
+    text-align: center;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 10px;
+}
+.btn button:hover{
+    border-radius: 30px;
+    padding: 5px 30px;
+    border:  #2CB8DF solid;
+    background-color: black;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: small;
+}

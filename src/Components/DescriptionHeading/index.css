@@ -1,0 +1,29 @@
+.descriptionheading {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+font-family: Poppins;
+font-size: 10px;
+font-weight: 700;
+line-height: 25px;
+color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 16px;
+    font-family: Poppins;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+.descriptionheading p {
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  padding-top: 40px;
+  text-align: center;
+  max-width: 900px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 100;
+}

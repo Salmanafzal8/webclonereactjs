@@ -1,0 +1,58 @@
+.herocard {
+  height: 78vh;
+  width: 62vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 10px 10px 5px -3px rgb(229, 233, 235);
+  color: rgb(0, 0, 0);
+}
+
+
+.herocard-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95),  
+    rgba(255, 255, 255, 0.5),   
+    rgba(255, 255, 255, 0)      
+  );
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.herocard-overlay h1 {
+font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 25px;
+color: rgba(0, 0, 0, 0.85);
+}
+
+.herounderline {
+  width: 60px;
+  height: 4px;
+  background-color: #00BCD4;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+.herocard-image-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

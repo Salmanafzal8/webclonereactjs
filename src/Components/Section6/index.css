@@ -1,0 +1,73 @@
+.section6 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.section6-card {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.section6-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay-box {
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  text-align: center;
+  justify-content: center;
+  height: 60%;
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 700;
+line-height: 25px;
+color: rgba(0, 0, 0, 0.85);
+}
+
+.overlay-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.underline{
+  width: 30px;
+  height: 4px;
+  background-color: #00BCD4;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+.overlay-box p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 15px;
+font-weight: 100;
+line-height: 36px;
+color: rgba(0, 0, 0, 0.85);
+}

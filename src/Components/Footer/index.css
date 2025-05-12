@@ -1,0 +1,160 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px 20px;
+  color: #000;
+  font-family:  "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+color: rgb(38, 79, 91);
+padding: 30px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  min-width: 180px;
+  flex: 1;
+  
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 700;
+font-family: Oswald, Barlow,     sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+color: rgb(32, 32, 32);
+  
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.footer-column ul li {
+  /* margin-bottom: 8px; */
+  font-size: 14px;
+  /* cursor: pointer; */
+  
+}
+
+/* .footer-column ul li:hover {
+  text-decoration: underline;
+} */
+
+.need-help {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.email-link {
+  font-size: 14px;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.zip-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+}
+
+.language-label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 10px;
+  background: white;
+  max-width: 180px;
+}
+
+.language-dropdown select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+  width: 100%;
+}
+
+.globe-icon {
+  font-size: 16px;
+  color: #555;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #999;
+  margin-right: 50px;
+  width: 80%;
+  /* max-width: 1000px; */
+  /* text-align: center; */
+  /* align-items: center; */
+font-family: sans-serif;
+font-size: 12px;
+font-weight: 300;
+line-height: 18px;
+color: rgb(179, 189, 199);
+
+}
+
+.copyright {
+  font-size: 13px;
+  color: #999;  
+  width: 25%;
+    color: var(--loblolly-gray);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    text-align: right;
+    font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 12px;
+font-weight: 300;
+line-height: 18px;
+color: rgb(179, 189, 199);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.buttons h4{
+    display: flex;
+    flex-direction: column;
+}
+.footer-column-quote-column{
+ display: flex;
+
+}
