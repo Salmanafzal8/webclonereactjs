@@ -35,9 +35,9 @@ const Section2 = ({
           ))}
         </ul>
                     <div className="logos">
-                      <img src={logo1} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
+                      <img className="logoimg" src={logo1} alt="" />
+                      <img className="logoimg" src={logo2} alt="" />
+                      <img className="logoimg" src={logo3} alt="" />
                     </div>
 
       </div>

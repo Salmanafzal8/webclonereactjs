@@ -5,44 +5,38 @@
   justify-content: center;
   background-color: white;
   height: 100vh;
-  gap: 2%;
   position: relative;
+  overflow: hidden; /* ✅ Prevent image overflow */
 }
 
 .section4-container.reverse {
   flex-direction: row-reverse;
 }
 
-.section4-image img {
-  height: 101vh;
+.section4-image {
   width: 100%;
-  max-width: 1500px;
-  object-fit: cover;
-        height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
+  height: 100vh;
+  overflow: hidden; /* ✅ Add this to stop image overflow on hover */
+  position: relative; /* Required for containing child img scaling */
 }
 
-.section4-image :hover {
-  position: relative;
-  background-origin: border-box;
-  position: relative;
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-      height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    -webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-transition: .5s ease;
+.section4-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  display: block;
+}
+
+.section4-image img:hover {
+  transform: scale(1.1); /* ✅ Zoom effect */
 }
 
 .section4-content {
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 500px;
+  padding: 40px 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 570px;
 }
 
 .section4-subtitle {
@@ -62,7 +56,8 @@ transition: .5s ease;
 }
 
 .section4-paragraph {
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 400;
   margin-bottom: 20px;
   color: #333;
   font-family: Poppins;
@@ -74,68 +69,35 @@ transition: .5s ease;
 }
 
 .section4-list li {
-  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-font-size: 16px;
-font-weight: 400;
-line-height: 25.144px;
-color: rgba(0, 0, 0, 0.85);
-  font-size: 15px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25.144px;
+  color: rgba(0, 0, 0, 0.85);
   margin-bottom: 12px;
   display: flex;
-  align-items: start;
-  font-family: Poppins;
+  align-items: flex-start;
   gap: 10px;
 }
 
 .dot {
+  flex-shrink: 0;
   height: 8px;
   width: 8px;
   background-color: #1aa3ff;
-  display: inline-block;
-  margin-right: 10px;
   margin-top: 6px;
 }
-.section3-container.reverse {
-  flex-direction: row-reverse;
+
+.dot-text {
+  font: 13px;
+  font-weight: 400;
+  flex: 1;
 }
 
-.step-label {
-  background-color: #00a4d6;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-right: 10px;
-  white-space: nowrap;
-}
-.section4underline{
-    width: 30px;
+.section4underline {
+  width: 30px;
   height: 4px;
-  background-color: #00BCD4;
-  /* margin: 0 auto 10px; */
+  background-color: #00bcd4;
   border-radius: 10px;
   margin-right: 200px;
 }
-.logos{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-   display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    padding-top: 20px;
-    padding-left: 60px;
-    margin-bottom: 40px;
-    height: 95px;
-}
-.logos img{
-  height: 100px;
-    margin-right: 8%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 110px;
-   background-position: center center;
-}
-

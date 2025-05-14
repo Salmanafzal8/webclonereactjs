@@ -3,11 +3,11 @@
   padding: 40px 20px 20px;
   color: #000;
   font-family:  "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-font-size: 14px;
-font-weight: 400;
-line-height: 25px;
-color: rgb(38, 79, 91);
-padding: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(38, 79, 91);
+  padding: 30px;
 }
 
 .footer-columns {
@@ -22,37 +22,27 @@ padding: 30px;
 .footer-column {
   min-width: 180px;
   flex: 1;
-  
 }
 
 .footer-column h4 {
   font-size: 16px;
   font-weight: 700;
-font-family: Oswald, Barlow,     sans-serif;
-font-size: 14px;
-font-weight: 700;
-line-height: 21px;
-color: rgb(32, 32, 32);
-  
+  font-family: Oswald, Barlow, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: rgb(32, 32, 32);
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 .footer-column ul li {
-  /* margin-bottom: 8px; */
   font-size: 14px;
-  /* cursor: pointer; */
-  
 }
-
-/* .footer-column ul li:hover {
-  text-decoration: underline;
-} */
 
 .need-help {
   margin-top: 10px;
@@ -84,6 +74,7 @@ color: rgb(32, 32, 32);
 }
 
 .language-dropdown {
+  opacity: 50%;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -94,13 +85,65 @@ color: rgb(32, 32, 32);
   max-width: 180px;
 }
 
-.language-dropdown select {
-  border: none;
-  outline: none;
+/* ▼ REPLACEMENT: Custom Dropdown with Dot Selectors ▼ */
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 180px;
+}
+
+.dropdown-display {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
   font-size: 14px;
-  background: transparent;
   width: 100%;
 }
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 35px;
+  z-index: 10;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  width: 130px;
+  display: none;
+}
+
+.custom-dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options li {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.footerdot {
+  height: 8px;
+  width: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* ▲ END Custom Dropdown Styles ▲ */
 
 .globe-icon {
   font-size: 16px;
@@ -111,7 +154,6 @@ color: rgb(32, 32, 32);
   padding-top: 20px;
   text-align: center;
   display: flex;
-  
 }
 
 .disclaimer {
@@ -119,42 +161,46 @@ color: rgb(32, 32, 32);
   color: #999;
   margin-right: 50px;
   width: 80%;
-  /* max-width: 1000px; */
-  /* text-align: center; */
-  /* align-items: center; */
-font-family: sans-serif;
-font-size: 12px;
-font-weight: 300;
-line-height: 18px;
-color: rgb(179, 189, 199);
-
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgb(179, 189, 199);
 }
 
 .copyright {
   font-size: 13px;
   color: #999;  
   width: 25%;
-    color: var(--loblolly-gray);
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 300;
-    text-align: right;
-    font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-font-size: 12px;
-font-weight: 300;
-line-height: 18px;
-color: rgb(179, 189, 199);
+  color: var(--loblolly-gray);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: right;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: rgb(179, 189, 199);
 }
-.buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.buttons h4{
-    display: flex;
-    flex-direction: column;
-}
-.footer-column-quote-column{
- display: flex;
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttons h4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-quote-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.langaugedot{
+  font: 50px;
+  color: #007bff;
 }

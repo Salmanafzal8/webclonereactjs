@@ -1,9 +1,9 @@
 .herocard {
-  height: 78vh;
-  width: 62vh;
+  height: 65vh;
+  width: 70vh;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,8 @@
   justify-content: flex-start;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.95),  
-    rgba(255, 255, 255, 0.5),   
+    rgb(255, 255, 255),  
+    rgb(255, 255, 255),   
     rgba(255, 255, 255, 0)      
   );
   padding: 30px 20px;
