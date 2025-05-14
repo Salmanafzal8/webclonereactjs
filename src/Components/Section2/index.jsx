@@ -18,7 +18,7 @@ const Section2 = ({
         <img src={image} alt="Section visual" />
       </div>
       <div className="section2-content">
-        <h3 className="section2-subtitle">POWUR DIFFERENCE</h3>
+        <h3 className="section2-subtitle">POWuUR DIFFERENCE</h3>
         <div className="section2underline"></div>
         <h1 className="section2-heading">{heading}</h1>
         <p className="section2-paragraph">{paragraph}</p>
