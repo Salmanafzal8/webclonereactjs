@@ -8,7 +8,9 @@ const Section6 = () => {
   return (
     <div className="section6">
       <div className="section6-card">
+        <div>
         <img src={section4img1} alt="Section" />
+        </div>
         <div className="overlay-box">
           <h3>THE BETTER WAY</h3>
           <div className="underline"> </div>
@@ -19,7 +21,9 @@ const Section6 = () => {
       </div>
 
       <div className="section6-card">
+        <div>
         <img src={section4img2} alt="Section" />
+        </div>
         <div className="overlay-box">
           <h3>ENERGY AND INDEPENDENCE</h3>
           <div className="underline"></div>
@@ -30,7 +34,9 @@ const Section6 = () => {
       </div>
 
       <div className="section6-card">
+        <div>
         <img src={section4img3} alt="Section" />
+        </div>
         <div className="overlay-box">
           <h3>SERVICES YOU TRUST</h3>
           <div className="underline"></div>

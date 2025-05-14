@@ -10,7 +10,7 @@ const section3 = ({image,list,heading,paragraph,useSteps,reverse}) => {
       </div>
             <div className="section3-content">
               <h3 className="section3-subtitle">POWUR DIFFERENCE</h3>
-              <div className="section2underline"></div>
+              <div className="section3underline"></div>
               <h1 className="section3-heading">{heading}</h1>
               <p className="section3-paragraph">{paragraph}</p>
               <ul className="section3-list">
@@ -28,18 +28,19 @@ const section3 = ({image,list,heading,paragraph,useSteps,reverse}) => {
               <div className="section3buttons">
                       <button
           style={{
-            fontSize : "10pX",
-            opacity : "70%",
+            fontSize : "10px",
+            opacity : "30%",
             backgroundColor: "white",
             color: "black",
             padding: "00px 40px",
             border: "1px solid ",
+            borderRadius: "5px"
           }}
         >
           ENTER ZIP CODE
         </button>
 
-              <ContainedButton  style={{ fontSize: "20px", padding : "10px 40px"  }}text={"Check Savings"}/>
+              <ContainedButton  style={{ fontSize: "18px", padding : "10px 40px"  }}text={"Check Savings"}/>
             </div>
       </div>
     </div>

@@ -31,8 +31,12 @@ color: rgb(255, 255, 255);
   height: 64px;
   padding-top: 1%;
   padding-bottom: 5px;
+  max-width: 1280px;
+  width: 100%;
   justify-content: space-around;
   gap: 80px;
+  position: fixed;
+  z-index: 10000;
 }
 .nav-button{
 display: flex;

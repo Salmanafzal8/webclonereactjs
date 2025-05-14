@@ -32,7 +32,7 @@ const HomePage = () => {
       />
 
       <div
-        style={{ display: "flex", gap: "50px", padding: "3%" }}
+        style={{ display: "flex", gap: "40px", padding: "2%" }}
         className="herocards"
       >
         <HeroCard image={herocardimg1} herocardheading={`Est. Carbon Sequestered`} />

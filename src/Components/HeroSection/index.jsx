@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h1>Feel good about what powers your life.</h1>
         <p>Real Customers. Real Results.</p>
         <span className='herobutton'>
-          <ContainedButton style={{}} text={"Get started"} />
+          <ContainedButton style= {{padding : "13px 60px"}} text={"Get started"} />
         </span>
       </div>
     </div>

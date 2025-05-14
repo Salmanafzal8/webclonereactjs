@@ -6,3 +6,11 @@
 body{
     background-color: #f2f2f2;
 }
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #1aa3ff;
+    display: inline-block;
+    margin-right: 14px;
+    margin-top: 6px;
+}
